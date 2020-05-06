@@ -33,6 +33,7 @@ RUN wget https://mirrors.aliyun.com/composer/composer.phar -O /usr/local/bin/com
     ln -s /root/.ssh /home/composer/.ssh 
 
 ENV COMPOSER_ALLOW_SUPERUSER 1
+ENV COMPOSER_MEMORY_LIMIT -1
 ENV COMPOSER_HOME /home/composer/.composer
 
 WORKDIR /usr/src/app
